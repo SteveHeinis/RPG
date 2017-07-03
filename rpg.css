@@ -1,0 +1,111 @@
+// MAGE //
+
+let Mage = function (nom, caracteristiques, stats, inventaire) {
+  this.nom = nom ;
+  this.caracteristiques = function(caracteristiques) {
+	this.vie = 50;
+	this.vitesse = 50; 
+	this.level = 1;
+}
+  this.stats = function (stats) {
+  this.intelligence = 20;
+  this.dexterite = 10;
+  this.force = 10;
+  this.defense = 10;
+}
+  this.inventaire = function (equipement, consommables, objdequete) {
+  this.equipement = ["Baton"];
+  this.consommables = [];
+  this.objdequete = [];
+ }
+}
+
+// PALADIN //
+
+let Paladin = function (nom, caracteristiques, stats, inventaire) {
+  this.nom = nom;
+	this.caracteristiques = function(caracteristiques) {
+	this.vie = 100;
+	this.vitesse = 100;
+	this.level = 1;
+}
+  this.stats = function (stats) {
+  this.intelligence = 10;
+  this.dexterite = 10;
+  this.force = 15;
+  this.defense = 10;
+}
+  this.inventaire = function (equipement, consommables, objdequete) {
+  this.equipement = ["Epee"];
+  this.consommables = [];
+  this.objdequete = [];
+ }
+}
+
+// ARCHER //
+
+let Archer = function (nom, caracteristiques, stats, inventaire) {
+  this.nom = nom;
+	this.caracteristiques = function(caracteristiques) {
+	this.vie = 75;
+	this.vitesse = 125; 
+	this.level = 1;
+}
+  this.stats = function (stats) {
+  this.intelligence = 10;
+  this.dexterite = 15;
+  this.force = 10;
+  this.defense = 10;
+}
+  this.inventaire = function (equipement, consommables, objdequete) {
+  this.equipement = ["Arc"];
+  this.consommables = [];
+  this.objdequete = [];
+ }
+}
+
+// TANK // 
+
+let Tank = function (nom, caracteristiques, stats, inventaire) {
+  this.nom = nom;
+	this.caracteristiques = function(caracteristiques) {
+	this.vie = 150;
+	this.vitesse = 50;
+	this.level = 1;
+}
+  this.stats = function (stats) {
+  this.intelligence = 10;
+  this.dexterite = 10;
+  this.force = 10;
+  this.defense = 15;
+}
+  this.inventaire = function (equipement, consommables, objdequete) {
+  this.equipement = ["Bouclier"];
+  this.consommables = [];
+  this.objdequete = [];
+ }
+}
+
+paladin = new Paladin('Paladin')
+paladin.caracteristiques()
+paladin.stats()
+paladin.inventaire()
+paladin;
+
+archer = new Archer('Archer')
+archer.caracteristiques()
+archer.stats()
+archer.inventaire()
+archer;
+
+tank = new Tank('Tank')
+tank.caracteristiques()
+tank.stats()
+tank.inventaire()
+tank;
+
+mage = new Mage('orc')
+mage.caracteristiques()
+mage.stats()
+mage.inventaire()
+mage;
